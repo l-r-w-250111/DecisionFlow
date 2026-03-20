@@ -155,19 +155,6 @@ privacy_scan_report.txt
 
 ---
 
-## Privacy and publishing notes
-
-Before publishing or sharing the repository, verify that it does **not** include:
-
-- API keys or bearer tokens
-- local absolute filesystem paths
-- personal usernames in config values
-- internal-only URLs
-- local database files, dumps, or logs
-
-If this repository includes `privacy_scan_report.txt`, review it before publishing.
-
----
 
 ## Third-party licenses
 
