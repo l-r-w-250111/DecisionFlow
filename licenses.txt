@@ -1,0 +1,69 @@
+Decision-Flow PM - Third-Party Module License Notes
+Generated: 2026-03-20T15:38:59.925499+09:00
+
+Scope:
+- This file lists the primary third-party modules directly used in the discussed implementation.
+- It is not a full transitive dependency bill of materials.
+- Confirm exact package versions from your lockfile / requirements before release.
+
+======================================================================
+FRONTEND MODULES
+======================================================================
+
+1. Next.js
+   License: MIT
+   Upstream: https://github.com/vercel/next.js/blob/canary/license.md
+   Notes: Used for page routing and app framework.
+
+2. React
+   License: MIT
+   Upstream: https://github.com/facebook/react/blob/main/LICENSE
+   Notes: Used for UI rendering and hooks.
+
+======================================================================
+BACKEND MODULES
+======================================================================
+
+3. FastAPI
+   License: MIT
+   Upstream: https://github.com/fastapi/fastapi/blob/master/LICENSE
+   Notes: Used for API routing and backend framework.
+
+4. SQLAlchemy
+   License: MIT
+   Upstream: https://github.com/sqlalchemy/sqlalchemy/blob/main/LICENSE
+   Notes: Used for ORM and persistence model definitions.
+
+5. Pydantic
+   License: MIT
+   Upstream: https://github.com/pydantic/pydantic/blob/main/LICENSE
+   Notes: Used for request / response schemas and validation.
+
+6. Starlette
+   License: BSD-3-Clause
+   Upstream: https://github.com/Kludex/starlette/blob/master/LICENSE.md
+   Notes: Used indirectly / directly via FastAPI stack and middleware components.
+
+======================================================================
+STDLIB / BUILT-IN MODULES
+======================================================================
+
+The following are standard library modules and generally do not require separate OSS
+license listing in the same way as third-party packages:
+- datetime
+- enum
+- typing
+- pathlib
+- json
+- etc.
+
+======================================================================
+IMPORTANT PUBLISHING NOTE
+======================================================================
+
+Before publishing, verify the exact dependency set from your actual project files, e.g.:
+- package.json / package-lock.json / pnpm-lock.yaml / yarn.lock
+- requirements.txt / pyproject.toml / poetry.lock / uv.lock
+
+If your repository includes additional modules (for example uvicorn, alembic, Tailwind,
+Playwright, etc.), add them here with their licenses as well.
